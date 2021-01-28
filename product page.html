@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style 2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <style>
+        .productpage{
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #prodImage img{
+            max-width: 400px;
+            width: 100%;
+        }
+        #prodImage{
+            flex-basis: 400px;
+        }
+        #content{
+            font-family: amazfont;
+        }
+        #buyMenu button {
+        width: 120px;
+        padding: 1rem 0rem;
+        background: #f54642;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 30px;
+        font-weight: bolder;
+        }
+        #buyMenu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bod">
+        
+        <div class="inhead">
+            <nav>
+                <div class="nav-left">
+                  <a href="index.html"><img src="logo.png" class="logo"></a>
+            
+                  <a href="address.html" class="inp"><div class="inp-div">
+                    <span class="material-icons" id="loc">
+                        location_on
+                        </span>
+                    <div class="inp-1">Hello<br>Select Your Address</div></div>
+                  </a>
+                </div>
+                <div class="nav-center">
+                  <select class="category">
+                    <option value="">All</option>
+                    <option value="">More options will be added in the future</option>
+                    
+                  </select>
+            
+                  <input type="text" class="inphead">
+                  <button class="search">
+                    <span class="material-icons">
+                        search
+                        </span>
+                  </button>
+                </div>
+                <ul class="nav-right">
+                  
+                    <!-- more links here -->
+                    <a href="#"><div>Hello, Sign In<br> Account and lists</div></a>
+                </ul>
+              </nav>
+        </div>
+    <!--<div class="head">
+        
+        <nav class="nav1">
+        <ul class="ul1">
+        <li class="bold"><a href=""><span class="material-icons">
+            menu
+            </span>All</a></li>
+        <li><a href="">Gift Cards</a></li>
+        <li><a href="">Best sellers</a></li>
+        <li><a href="">Mobiles</a></li>
+        <li><a href="">Today's deals</a></li>
+        <li><a href="">Prime</a></li>
+        <li><a href="">New Releases</a></li>
+        <li><a href="">Customer Service</a></li>
+        <li><a href="">Fashion</a></li>
+        <li><a href="">Electronics</a></li>
+        <li><a href="">Computers</a></li>
+        <li><a href="">Amazon Pay</a></li>
+        <li><a href="">Gift Ideas</a></li>
+        <li><a href="">Home & Kitchen</a></li>
+        <li><a href="">Books</a></li>
+        <li><a href="">Sell</a></li>
+        </ul>
+        </nav>
+        
+    </div>-->
+
+    <div class="productpage">
+        <div id="prodImage" >
+            <img id="img-1">
+        </div>
+        <div id="content" style="padding-top: 5vh;">
+            <h1 id="prodName">Name</h1>
+            <h3 id="seller">Seller</h3><br><br><br>
+            <p id="Details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, obcaecati soluta aperiam, natus consectetur architecto possimus ad rerum aut nihil, magni aliquid deleniti nesciunt quasi at nisi id maiores veritatis?
+            Suscipit vel aperiam tempore quam aliquam nisi dignissimos soluta. Qui dolores et at numquam unde tenetur commodi! Ullam veniam quas similique eveniet laudantium dolore eos quos, numquam pariatur, officia quam.
+            Esse sint ullam, beatae, dignissimos quae et, nostrum blanditiis itaque minima in asperiores obcaecati rerum ducimus dicta consequatur aut! Tempora temporibus doloremque reiciendis eos iure sit saepe modi in. Fuga.
+            Mollitia sint et harum ducimus quasi repudiandae dignissimos placeat repellat inventore veritatis ratione, voluptatum delectus libero non aut quam impedit nihil eligendi est ad pariatur a sequi similique dicta. Ipsa.
+            Magni perspiciatis repellat itaque suscipit consequuntur dolor amet, nesciunt dolore eius possimus aperiam labore odit ab quibusdam officiis tempora incidunt consectetur deserunt! A totam corporis aperiam molestiae. Nihil, dignissimos sit!
+            Rerum possimus accusantium explicabo fugiat ducimus ea quod, necessitatibus sed sequi provident sit praesentium ratione. Quae quas molestias omnis nostrum illum veniam deserunt, ratione, aut placeat, aliquam facere neque blanditiis.
+            Cum nemo inventore, culpa deserunt similique nostrum voluptatum quaerat, corporis repudiandae architecto quasi, minima esse. Explicabo culpa nulla numquam eveniet eum facere deserunt eius praesentium architecto, cumque iure quae iusto.
+            Necessitatibus minima dicta sunt magnam fuga omnis alias eius dolore doloribus iure. Odio repellat minus minima ad eveniet quibusdam ipsa ab at sunt! Cupiditate laborum sint dolore harum dignissimos nemo!
+            Dolorem ullam, voluptatibus quo ratione exercitationem ea, suscipit est sequi maiores necessitatibus ipsum error similique vitae saepe molestiae iste aperiam excepturi ipsa sit soluta beatae sunt rem quam. Esse, adipisci.
+            Labore architecto ducimus, totam voluptatem reiciendis ullam rerum quia consequuntur inventore veritatis laboriosam repudiandae debitis ipsa, nisi soluta culpa cum ex eligendi consequatur, maxime sit? Ullam necessitatibus voluptate nisi porro?</p>
+        </div>
+        <div id="buyMenu">
+
+            <button onclick="purchasePage()">Purchase: $129</button>
+        </div>
+    </div>
+    </div>
+    <SCRIPT>
+        const product1 = new URLSearchParams(window.location.search).get('product')
+        if(product1=="12pro"){
+            var cont=`6.1-inch Super Retina XDR display<br>
+Ceramic Shield, tougher than any smartphone glass<br>
+A14 Bionic chip, the fastest chip ever in a smartphone<br>
+Pro camera system with 12MP Ultra Wide, Wide and Telephoto cameras; 4x optical zoom range; Night mode, Deep Fusion, Smart HDR 3, Apple ProRAW, 4K Dolby Vision HDR recording
+<br>LiDAR Scanner for improved AR experiences, Night mode portraits<br>
+12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording<br>
+Industry-leading IP68 water resistance<br>
+Supports MagSafe accessories for easy attach and faster wireless charging<br>
+iOS with redesigned widgets on the Home screen, all-new App Library, App Clips and more`
+            document.getElementById("prodName").innerHTML="iPhone 12 Pro"
+            document.getElementById("seller").innerHTML="RajShri Electronics"
+            document.getElementById("Details").innerHTML=cont
+            document.getElementById("img-1").src="12 pro silver.png"
+            document.getElementById("buyMenu").children[0].innerHTML="Purchase: $1299"
+        }
+        if(product1=="washMachine"){
+            var cont=`Fully-automatic front load washing machine: Best Wash Quality, Energy and Water efficient<br>
+Capacity 6 Kg: Suitable for bachelors & couples<br>
+800 Spin RPM: higher spin speeds helps in faster drying<br>
+Energy Rating: 5 Star energy rating - Best in class efficiency<br>
+Manufacturer Warranty: 4 year comprehensive super warranty and 10-year warranty on spare part products<br>
+Wash Programs: 8 wash programs<br>
+Special features: Crescent Moon Drum, 2D wash system, Aqua Energie, Cradle Wash, Hot Wash Option, Tub Clean, Laundry Add Option, Child Lock<br>
+Included in the box: Washing Machine, Inlet Pipe, Drain Hose, User Manual`
+            document.getElementById("prodName").innerHTML="IFB Fully automatic front-loading washing machine"
+            document.getElementById("seller").innerHTML="RajShri Electronics"
+            document.getElementById("Details").innerHTML=cont
+            document.getElementById("img-1").src="washMachine.jpg"
+            document.getElementById("buyMenu").children[0].innerHTML="Purchase: $274"
+        }
+
+        if(product1=="OpTv"){
+            var cont=`Resolution: Full HD (1920x1080) | Refresh Rate: 60 hertz
+Connectivity: 2 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices<br>
+Sound : 20 Watts Output | Dolby Audio<br>
+Smart TV Features: Android TV 9.0 | OnePlus Connect | Google Assistant | Play Store | Chromecast | Shared Album | Supported Apps : Netflix, YouTube, Prime video | Content Calendar | OxygenPlay<br>
+Display: LED Panel | Noise Reduction | Colour Space Mapping |Dynamic Contrast | Anti-Aliasing | DCI-P3 93% colour gamut | Gamma Engine<br>
+Design: Bezel-less | Screen/Body Ratio = 88.5%<br>
+Warranty Information: 1 year comprehensive warranty + additional 1 year on panel provided by the manufacturer from date of purchase<br>
+Installation/Wall mounting/demo will be arranged by Amazon Home Services. For any other information, please contact Amazon customer support | Wall Mount is not included in the box and will be charged extra at the time of installation<br>
+Easy returns: This product is eligible for replacement within 10 days of delivery in case of any product defects, damage or features not matching the description provided<br>`
+            document.getElementById("prodName").innerHTML="OnePlus Y Series 108 cm (43 inches) Full HD LED Smart Android TV 43Y1"
+            document.getElementById("seller").innerHTML="RajShri Electronics"
+            document.getElementById("Details").innerHTML=cont
+            document.getElementById("img-1").src="optv.jpg"
+            document.getElementById("buyMenu").children[0].innerHTML="Purchase: $274"
+        }
+        if(product1=="HeadPhone"){
+            var cont=`Great wireless sound with deep dynamic bass and codec support including AAC and AptX Low Latency<br>
+30-hour battery life<br>
+App support providing an equalizer, Podcast Mode and Firmware updates<br>
+Crafted from materials and with for outstanding durability with minimalist design available in a choice of white or black<br>
+Intuitive controls including Virtual Assistant button for Siri and Google Assistant<br>
+USB-C fast charging and advanced wireless Bluetooth 5.0 technology for effortlessly reliable connectivity`
+            document.getElementById("prodName").innerHTML="Sennheiser Over Ear Wireless HD 350BT Black Headphone"
+            document.getElementById("seller").innerHTML="RajShri Electronics"
+            document.getElementById("Details").innerHTML=cont
+            document.getElementById("img-1").src="HEADPHONE.jpg"
+            document.getElementById("buyMenu").children[0].innerHTML="Purchase: 83$"
+        }
+        if(product1=="menShirt"){
+            var cont=`Care Instructions: Machine Wash<br>
+Fit Type: Regular Fit<br>
+Pattern: Solid<br>
+Sleeve Type: Full Sleeve`
+            document.getElementById("prodName").innerHTML="LookMark Men's Regular Fit Casual Shirt"
+            document.getElementById("seller").innerHTML="Vipul Clothing"
+            document.getElementById("Details").innerHTML=cont+`<br>Size:<br><input type="radio" id="39" name="size" value="39">
+                                                                <label for="39">XS</label><br>
+                                                                <input type="radio" id="41" name="size" value="S">
+                                                                <label for="41">S</label><br>
+                                                                <input type="radio" id="M" name="size" value="M">
+                                                                <label for="M">M</label><br>
+                                                                <input type="radio" id="L" name="size" value="L">
+                                                                <label for="L">L</label><br>
+                                                                <input type="radio" id="XL" name="size" value="XL">
+                                                                <label for="L">XL</label>`
+            document.getElementById("img-1").src="blueShirt.jpg"
+            document.getElementById("buyMenu").children[0].innerHTML="Purchase: 30$"
+            var radio= document.createElement("button")
+            radio.type="radio"
+            radio.name="radio"
+            radio.value="radio 1"
+            document.getElementById("Details").appendChild(radio)
+        }
+        if(product1=="laptop"){
+            var cont=`Processor: 10th Generation Intel i5-1035G7 Processor, Quad-Core, 1.2 Ghz<br>
+Display: 13.5 inch 2496 x 1664 Pixelsense display | Touchscreen enabled<br>
+Memory & Storage : 8GB LPDDR4X RAM with Intel Iris Plus Graphics| Storage: 128 GB SSD<br>
+Preinstalled software: Windows 10 Home with lifetime validity, Microsoft Office 365 30-day trial | In the box: Surface Laptop 3, Power Supply, Quick Start Guide, Safety and warranty documents<br>
+In the box details : Surface Laptop 3, Power Supply, Quick Start Guide, Safety and warranty documents<br>
+Keyboard finish : Alcantara material palm rest`
+            document.getElementById("prodName").innerHTML="Microsoft Surface Laptop 3 Intel Core™ i5 10th Gen 13.5 inch Touchscreen Laptop (8GB/128GB SSD/Windows 10 Home/Integrated Graphics/Platinum/1.265kg), VGY-00021"
+            document.getElementById("seller").innerHTML="RajShri Electronics"
+            document.getElementById("Details").innerHTML=cont
+            document.getElementById("img-1").src="laptop.jpg"
+            document.getElementById("buyMenu").children[0].innerHTML="Purchase: 1000$"
+        }
+        if(product1=="drill"){
+            var cont=`Multi-function Drilling machine, to make holes on the wall, concrete, metal, wood, plastic<br>
+Suitable for professionals & Do-It-Yourself at home and Technicians. Power output : 301 W<br>
+Forward / Reverse switch for screw driving work<br>
+Two way Hammering/drilling mode selector switch<br>
+Ergonomic design for easy handling<br>
+Double insulation for high safety<br>
+Speed trigger with electronic control for exact pilot drilling<br>
+Rotating brush plate for constant power in reverse and forward rotation<br>
+Auxiliary handle with depth stop for better control`
+            document.getElementById("prodName").innerHTML="Bosch GSB 600 RE 13mm 600 Watt Smart Drill Kit"
+            document.getElementById("seller").innerHTML="Arvind PowerTools"
+            document.getElementById("Details").innerHTML=cont
+            document.getElementById("img-1").src="drill.jpg"
+            document.getElementById("buyMenu").children[0].innerHTML="Purchase: 100$"
+        }
+        function purchasePage(){
+            window.open("purchase page.html", "_self")
+        }
+    </SCRIPT>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style 2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <style>
+        .form1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .containerForm{
+            height: 60vh;
+            width: 20vw;
+            box-shadow: 0px 0px 10px rgb(82, 82, 82);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #SignInform input{
+            margin-top: 10px;
+            height: 30px;
+            width: 200px;
+        }
+        #siIn{
+            font-size: 20px;
+            font-family: amazfont;
+        }
+        #subButton{
+            background-color: darkgoldenrod;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px rgb(82, 82, 82);
+        }
+    </style>
+</head>
+<body>
+    <div class="bod">
+        
+        <div class="inhead">
+            <nav>
+                <div class="nav-left">
+                  <a href="index.html"><img src="logo.png" class="logo"></a>
+            
+                  <a href="" class="inp"><div class="inp-div">
+                    <span class="material-icons" id="loc">
+                        location_on
+                        </span>
+                    <div class="inp-1">Hello<br>Select Your Address</div></div>
+                  </a>
+                </div>
+                <div class="nav-center">
+                  <select class="category">
+                    <option value="">All</option>
+                    <option value="">Deals</option>
+                    <option value="">Alexa Skills</option>
+                    <option value="">Amazon Devices</option>
+                    <option value="">Amazon Fashion</option>
+                    <option value="">Amazon Fresh</option>
+                    <option value="">Amazon Pantry</option>
+                    
+                  </select>
+            
+                  <input type="text" class="inphead">
+                  <button class="search">
+                    <span class="material-icons">
+                        search
+                        </span>
+                  </button>
+                </div>
+                <ul class="nav-right">
+                  
+                    <!-- more links here -->
+                    <a href="#"><div>Hello, Sign In<br> Account and lists</div></a>
+                </ul>
+              </nav>
+            <!--<nav>
+            <ul class="ul2">
+            
+            <li ><a href="" ><img src="logo.png" class="logo"></a></li>
+            <li>
+                <a href="" class="inp"><div>Hello<br>Select Your Address</div></a>
+            </li>
+            <li class="inp">
+                <ul class="textar">
+                    <li>
+                        <select class="category">
+                            <option value="">All</option>
+                            <option value="">Deals</option>
+                            <option value="">Alexa Skills</option>
+                            <option value="">Amazon Devices</option>
+                            <option value="">Amazon Fashion</option>
+                            <option value="">Amazon Fresh</option>
+                            <option value="">Amazon Pantry</option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="text" class="inphead">
+                    </li>
+                </ul>
+            </li>
+            <li><a href=""> </a></li>
+
+            </ul>
+            </nav>-->
+        </div>
+    <!--<div class="head">
+        
+        <nav class="nav1">
+        <ul class="ul1">
+        <li class="bold"><a href=""><span class="material-icons">
+            menu
+            </span>All</a></li>
+        <li><a href="">Gift Cards</a></li>
+        <li><a href="">Best sellers</a></li>
+        <li><a href="">Mobiles</a></li>
+        <li><a href="">Today's deals</a></li>
+        <li><a href="">Prime</a></li>
+        <li><a href="">New Releases</a></li>
+        <li><a href="">Customer Service</a></li>
+        <li><a href="">Fashion</a></li>
+        <li><a href="">Electronics</a></li>
+        <li><a href="">Computers</a></li>
+        <li><a href="">Amazon Pay</a></li>
+        <li><a href="">Gift Ideas</a></li>
+        <li><a href="">Home & Kitchen</a></li>
+        <li><a href="">Books</a></li>
+        <li><a href="">Sell</a></li>
+        </ul>
+        </nav>
+        
+    </div>-->
+    <div class="form1">
+        <div class="containerForm" data-tilt data-tilt-reverse="true">
+            <div id="siIn">Sign In</div>
+            <form  id="SignInform" method="GET" onsubmit=" return check1()" action="index.html">
+                <input type="text" id="fname" name="fname" value="" placeholder="First Name" required><br>
+                <input type="text" id="lname" name="lname" value="" placeholder="Last Name" required><br>
+                <input type="email" name="emailId" id="emailId" placeholder="Email Id" required><br>
+                <input type="date" name="Date" id="birthDate"  required><br>
+                
+                <input type="submit" value="Submit" id="subButton">
+            </form>
+            <p id="error message" ></p>
+        </div>
+    </div>
+    </div>
+    <script src="vanilla tilt.js"></script>
+    <script>
+        function check1(){
+            var fulldate= document.getElementById("birthDate").value;
+            var year=fulldate.slice(0, 4)
+            var date1= new Date();
+            var date2 = parseInt(date1.getFullYear());
+            var diff= date2-year;
+            console.log(diff)
+            if(diff<18){
+                document.getElementById("error message").innerHTML="You need to be over the age of 18 to shop at unbox.com"
+            return false;
+        }
+        }
+    </script>
+</body>
+</html>

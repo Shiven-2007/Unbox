@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style 2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <style>
+        .form1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .containerForm{
+            height: 60vh;
+            width: 20vw;
+            box-shadow: 0px 0px 10px rgb(82, 82, 82);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #SignInform input{
+            margin-top: 10px;
+            height: 30px;
+            width: 200px;
+        }
+        #siIn{
+            font-size: 20px;
+            font-family: amazfont;
+        }
+    </style>
+</head>
+<body>
+    <div class="bod">
+        
+        <div class="inhead">
+            <nav>
+                <div class="nav-left">
+                  <a href="javascript:history.back()"><img src="logo.png" class="logo"></a>
+            
+                  <a href="" class="inp"><div class="inp-div">
+                    <span class="material-icons" id="loc">
+                        location_on
+                        </span>
+                    <div class="inp-1">Hello<br>Select Your Address</div></div>
+                  </a>
+                </div>
+                <div class="nav-center">
+                  <select class="category">
+                    <option value="">All</option>
+                    <option value="">More options will be added in the future</option>
+                  </select>
+            
+                  <input type="text" class="inphead">
+                  <button class="search">
+                    <span class="material-icons">
+                        search
+                        </span>
+                  </button>
+                </div>
+                <ul class="nav-right">
+                  
+                    <!-- more links here -->
+                    <a href="sign in page.html" id="signPage"><div> Hello, Sign In<br></div></a>
+                </ul>
+              </nav>
+              </div>
+              
+                <div class="form1">
+                    <div class="containerForm" data-tilt data-tilt-reverse="true">
+                        <div id="siIn">Sign In</div>
+                        <form  id="SignInform" onsubmit=" return submit1()" action="index.html">
+                            <input type="text" id="fname" name="hno" value="" placeholder="House Number" required><br>
+                            <input type="text" id="lname" name="street" value="" placeholder="Street" required><br>
+                            <input type="text" name="city" id="city" placeholder="City" required><br>
+                            <input type="text" name="zipcode" id="zipcode" placeholder="Zip Code" required> <br>
+                            
+                            <input type="submit" value="Submit" id="subButton">
+                        </form>
+                        <p id="error message" ></p>
+                    </div>
+                </div>
+            
+              </div>
+              </body>
+              <script>
+                function submit1(){
+                    var zip=isNaN(document.getElementById("zipcode").value);
+                    var city=isNaN(document.getElementById("city").value);
+                    if(city==false){
+                        document.getElementById("error message").innerHTML="A city cannot contain numbers"
+                        return false;
+                    }
+                    else if(zip==true){
+                        document.getElementById("error message").innerHTML="Zip Code can contain only numbers"
+                        return false;
+                  }
+                }
+                  
+              </script>
+              </html>
+              

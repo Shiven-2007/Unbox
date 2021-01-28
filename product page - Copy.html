@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style 2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <style>
+        .productpage{
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #content{
+            font-family: amazfont;
+        }
+        #buyMenu button {
+        width: 120px;
+        padding: 1rem 0rem;
+        background: #f54642;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 30px;
+        font-weight: bolder;
+        }
+        #buyMenu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .trial{
+            width: 100%;
+        }
+        .trial iframe{
+            position: absolute;
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="bod">
+        <div class="trial">
+            <iframe src="header.html" frameborder="0" ></iframe>
+        </div>
+        
+
+    <div class="productpage">
+        <div id="prodImage" >
+            <img id="img-1">
+        </div>
+        <div id="content" style="padding-top: 5vh;">
+            <h1 id="prodName">Name</h1>
+            <h3 id="seller">Seller</h3><br><br><br>
+            <p id="Details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, obcaecati soluta aperiam, natus consectetur architecto possimus ad rerum aut nihil, magni aliquid deleniti nesciunt quasi at nisi id maiores veritatis?
+            Suscipit vel aperiam tempore quam aliquam nisi dignissimos soluta. Qui dolores et at numquam unde tenetur commodi! Ullam veniam quas similique eveniet laudantium dolore eos quos, numquam pariatur, officia quam.
+            Esse sint ullam, beatae, dignissimos quae et, nostrum blanditiis itaque minima in asperiores obcaecati rerum ducimus dicta consequatur aut! Tempora temporibus doloremque reiciendis eos iure sit saepe modi in. Fuga.
+            Mollitia sint et harum ducimus quasi repudiandae dignissimos placeat repellat inventore veritatis ratione, voluptatum delectus libero non aut quam impedit nihil eligendi est ad pariatur a sequi similique dicta. Ipsa.
+            Magni perspiciatis repellat itaque suscipit consequuntur dolor amet, nesciunt dolore eius possimus aperiam labore odit ab quibusdam officiis tempora incidunt consectetur deserunt! A totam corporis aperiam molestiae. Nihil, dignissimos sit!
+            Rerum possimus accusantium explicabo fugiat ducimus ea quod, necessitatibus sed sequi provident sit praesentium ratione. Quae quas molestias omnis nostrum illum veniam deserunt, ratione, aut placeat, aliquam facere neque blanditiis.
+            Cum nemo inventore, culpa deserunt similique nostrum voluptatum quaerat, corporis repudiandae architecto quasi, minima esse. Explicabo culpa nulla numquam eveniet eum facere deserunt eius praesentium architecto, cumque iure quae iusto.
+            Necessitatibus minima dicta sunt magnam fuga omnis alias eius dolore doloribus iure. Odio repellat minus minima ad eveniet quibusdam ipsa ab at sunt! Cupiditate laborum sint dolore harum dignissimos nemo!
+            Dolorem ullam, voluptatibus quo ratione exercitationem ea, suscipit est sequi maiores necessitatibus ipsum error similique vitae saepe molestiae iste aperiam excepturi ipsa sit soluta beatae sunt rem quam. Esse, adipisci.
+            Labore architecto ducimus, totam voluptatem reiciendis ullam rerum quia consequuntur inventore veritatis laboriosam repudiandae debitis ipsa, nisi soluta culpa cum ex eligendi consequatur, maxime sit? Ullam necessitatibus voluptate nisi porro?</p>
+        </div>
+        <div id="buyMenu">
+
+            <button>Purchase: $129</button>
+        </div>
+    </div>
+    </div>
+    <SCRIPT>
+        const product1 = new URLSearchParams(window.location.search).get('product')
+        if(product1=="12pro"){
+            var cont=`6.1-inch Super Retina XDR display<br>
+Ceramic Shield, tougher than any smartphone glass<br>
+A14 Bionic chip, the fastest chip ever in a smartphone<br>
+Pro camera system with 12MP Ultra Wide, Wide and Telephoto cameras; 4x optical zoom range; Night mode, Deep Fusion, Smart HDR 3, Apple ProRAW, 4K Dolby Vision HDR recording
+<br>LiDAR Scanner for improved AR experiences, Night mode portraits<br>
+12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording<br>
+Industry-leading IP68 water resistance<br>
+Supports MagSafe accessories for easy attach and faster wireless charging<br>
+iOS with redesigned widgets on the Home screen, all-new App Library, App Clips and more`
+            document.getElementById("prodName").innerHTML="iPhone 12 Pro"
+            document.getElementById("seller").innerHTML="RajShri Electronics"
+            document.getElementById("Details").innerHTML=cont
+            document.getElementById("img-1").src="12 pro silver.png"
+        }
+
+
+    </SCRIPT>
+</body>
+</html>
