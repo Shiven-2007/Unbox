@@ -3,7 +3,7 @@
     padding: 0px;
     
 }
-html,body{
+html, body{
     height: auto;
     min-height: 100%;
 }
@@ -12,12 +12,13 @@ html,body{
     src: url(Amaz\ font.ttf)
 }
 .bod{
-    height: 100%;
+    min-height: 100%;
+    height: auto;
     width: 100%;
     display: flex;
     flex-flow: column;
+    align-items: center;
 }
-
 .head{
     height: 40px;
     align-items: center;
@@ -115,13 +116,16 @@ html,body{
 
 
 
-
+.inhead{
+    width: 100%;
+}
 .inhead nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #131921;
     height: 60px;
+    width: 100%;
 }
 
 .nav-left a{
