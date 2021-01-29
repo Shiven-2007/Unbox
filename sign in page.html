@@ -24,6 +24,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
         #SignInform input{
             margin-top: 10px;
@@ -41,11 +42,35 @@
             border-radius: 10px;
             box-shadow: 0px 0px 3px rgb(82, 82, 82);
         }
+        #errormessage{
+            position: absolute;
+            background-color:#f44336;
+            top: 10vh;
+            padding: 10px;
+            font-family: amazfont;
+            color: white;
+            width: 80%;
+            border-radius: 10px;
+        }
+        .rightCross{
+            font-size: 20px;
+            font-family: monospace;
+            position: absolute;
+            right: 10px;
+        }
+        .rightCross:hover{
+            color: black;
+            cursor:default;
+        }
+        #posrel{
+            position: relative;
+        }
         @media(max-width: 1160px) {
             .containerForm{
                 box-shadow: none;
             }
         }
+
     </style>
 </head>
 <body>
@@ -155,7 +180,7 @@
                 
                 <input type="submit" value="Submit" id="subButton">
             </form>
-            <p id="error message" ></p>
+            <div id="errormessage" style="display: none;"><div id="posrel">You need to be above the age of 18 to use unbox.com and its services<span class="rightCross" onclick="this.parentElement.parentElement.style.display='none'">&times;</span></div></div>
         </div>
     </div>
     </div>
@@ -169,7 +194,7 @@
             var diff= date2-year;
             console.log(diff)
             if(diff<18){
-                document.getElementById("error message").innerHTML="You need to be over the age of 18 to shop at unbox.com"
+                document.getElementById("errormessage").style.display="block"
             return false;
         }
         }
