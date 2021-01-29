@@ -103,8 +103,11 @@ html{
 
 }
 
-@media(max-width: 900px){
+@media(max-width: 960px){
   .cont{
     width: 100vw;
+  }
+  .nav-center{
+    display: none;
   }
 }
