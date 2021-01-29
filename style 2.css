@@ -89,3 +89,9 @@ html{
     justify-content: space-between;
 }
 }
+
+@media(max-width: 1400px){
+  .card{
+    font-size: 0.7rem;
+  }
+}
